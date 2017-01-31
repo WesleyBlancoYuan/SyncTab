@@ -1,16 +1,22 @@
 {
-  "manifest_version": 2,
+    "manifest_version":     2,
 
-  "name": "SyncTabs",
-  "description": "Transfer your opened tabs between devices. ",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon_st.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "name":                 "SyncTab",
+    "description":          "Synchronize your opened tabs between multiply devices. Switch between workstation, your home computer, or your mobile phone.",
+    "version":              "1.0",
+    "icons":                {},
+    // "default_locale":       "en",
+    // to avoid _locales subtree problem, must config more. see:
+    // http://stackoverflow.com/questions/12993034/chrome-extension-manifest-version-2-locales-issues#answer-13021878
+    "browser_action":
+    {
+        "default_title":    "SyncTab - Sync your tabs with ease!",
+        "default_icon":     "icon_st.png",
+        "default_popup":    "popup.html"
+    },
+    "permissions": 
+    [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ]
 }
