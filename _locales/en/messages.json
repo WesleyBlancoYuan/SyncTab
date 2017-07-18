@@ -1,0 +1,31 @@
+{
+	// Required
+	"first_message": 
+	{
+		// Required
+		"message":		"A message.",
+		"description":	"A simple sample message.",
+		"placeholders": 
+		{
+
+		}
+
+	},
+
+	"second_message":
+	{
+		"message":		"Another message, $MASTER$.",
+		"description":	"Just another message.",
+		"placeholders":
+		{
+			"MASTER":
+			{
+				"content": "$1",
+				"example": "something"
+			}
+		}
+
+	}
+
+
+}

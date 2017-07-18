@@ -1,13 +1,18 @@
 {
+    // Required
     "manifest_version":     2,
-
     "name":                 "SyncTab",
-    "description":          "Synchronize your opened tabs between multiply devices. Switch between workstation, your home computer, or your mobile phone.",
     "version":              "1.0",
+    "version_name":         "General Kim",
+
+    // Recommended
+    "description":          "Synchronize your opened tabs between multiply devices. Switch between workstation, your home computer, or your mobile phone.",
     "icons":                {},
     // "default_locale":       "en",
     // to avoid _locales subtree problem, must config more. see:
     // http://stackoverflow.com/questions/12993034/chrome-extension-manifest-version-2-locales-issues#answer-13021878
+    
+    // Pick one between browser_action and page_action, or none
     "browser_action":
     {
         "default_title":    "SyncTab - Sync your tabs with ease!",
@@ -18,5 +23,14 @@
     [
         "activeTab",
         "https://ajax.googleapis.com/"
-    ]
+    ],
+    // Optional
+    "author":               "WesternGun",
+    "automation":           "",
+    "background":
+    {
+        // Recommended
+        "persistent":       false
+    },
+
 }
