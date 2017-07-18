@@ -7,8 +7,13 @@
 
     // Recommended
     "description":          "Synchronize your opened tabs between multiply devices. Switch between workstation, your home computer, or your mobile phone.",
-    "icons":                {},
-    // "default_locale":       "en",
+    "icons":                
+    {
+        "32": "icon_st.png",
+        "64": "icon_st.png",
+        "128": "icon_st.png"
+    },
+    "default_locale":       "en",
     // to avoid _locales subtree problem, must config more. see:
     // http://stackoverflow.com/questions/12993034/chrome-extension-manifest-version-2-locales-issues#answer-13021878
     
